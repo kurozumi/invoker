@@ -1,0 +1,13 @@
+{
+    "name": "kurozumi/test-util",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kurozumi\\TestUtil\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}
