@@ -2,6 +2,7 @@
     "name": "kurozumi/php-private-method-invoker",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Kurozumi\\PhpPrivateMethodInvoker\\": "src/"
