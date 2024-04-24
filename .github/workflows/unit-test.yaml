@@ -1,0 +1,31 @@
+name: Unit Test
+on:
+  - workflow_dispatch
+  - pull_request
+jobs:
+  phpunit:
+    name: PHPUnit
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: [ '7.4', '8.0', '8.1', '8.2', '8.3' ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup PHP, with composer and extensions
+        uses: shivammathur/setup-php@v2 #https://github.com/shivammathur/setup-php
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: :xdebug
+          tools: composer:v2
+
+      - name: Initialize Composer
+        uses: ./.github/actions/composer
+
+      - name: PHPUnit
+        run: ./vendor/bin/phpunit
