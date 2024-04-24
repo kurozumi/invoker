@@ -1,15 +1,15 @@
 {
-    "name": "kurozumi/invoker",
+    "name": "kurozumi/php-private-method-invoker",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Kurozumi\\Invoker\\": "src/"
+            "Kurozumi\\PhpPrivateMethodInvoker\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kurozumi\\Invoker\\Tests\\": "tests/"
+            "Kurozumi\\PhpPrivateMethodInvoker\\Tests\\": "tests/"
         }
     },
     "require": {
