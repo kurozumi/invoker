@@ -69,7 +69,7 @@ class Sample
         return $text1.'_'.$text2;
     }
 
-    public function method3(array $array)
+    private function method3(array $array)
     {
         return $array;
     }
