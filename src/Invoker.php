@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types=1)
+declare(strict_types=1);
 
-namespace Kurozumi\TestUtil;
+namespace Kurozumi\Invoker;
 
 final class Invoker
 {

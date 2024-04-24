@@ -1,13 +1,22 @@
 {
-    "name": "kurozumi/test-util",
+    "name": "kurozumi/invoker",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Kurozumi\\TestUtil\\": "src/"
+            "Kurozumi\\Invoker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kurozumi\\Invoker\\Tests\\": "tests/"
         }
     },
     "require": {
         "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "friendsofphp/php-cs-fixer": "^3.54"
     }
 }
